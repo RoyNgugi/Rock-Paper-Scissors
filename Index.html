@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissiors</title>
+    <link reL="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet"> 
+    <script src="Game_logic.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+            <div class="heading-container">
+                <h2>Rock <br> Paper <Br> Scissors</h2>
+                    <div class="score-container">
+                        <p>score</p>
+                        <div id="score"> 0</div>
+                </div>
+            </div>
+        <div class="game-container">
+            <div id="rock" class="selectable rock">👊</div>
+            <div id="paper" class="selectable paper">👋</div>
+            <div id="scissors" class="selectable scissors">✌️</div>
+        </div>
+        <div class="winner-container hide">
+            <div class="selected">
+                <div id="user-results" class="selectable"></div>
+                    <p>you picked</p>
+                </div>
+                <div class="selected">
+                    <div id="ai-results" class="selectable"></div>
+                    <p>Ai picked</p>
+                </div>
+                <div class="outcome">
+                    <h2 id="won-text"></h2>
+                    <button id="reset">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
